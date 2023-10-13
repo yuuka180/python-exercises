@@ -14,4 +14,5 @@ def fibonacci(n):
 
 a = 20
 # この下で、変数aと、上記で作成した関数fibonacci(n)を使って、20番目のフィボナッチ数を出力してください
+# 期待する出力：6765
 print(fibonacci(20))

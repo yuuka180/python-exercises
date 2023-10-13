@@ -5,4 +5,5 @@ def add(num_1, num_2):
 a = 10
 b = 20
 # add関数に変数a, bを渡し、その結果を出力してください
+# 期待する出力： 30
 print(add(a,b))
