@@ -35,3 +35,14 @@ bRecords = [
 ]
 # 変数bRecordsには、大谷選手の各試合の成績が格納されている（タプルで、試合日、打席数、ヒット数）
 # 最高、何試合連続でヒットを打ったのかを求めるプログラムを作成してください
+consecutive_hits = 0
+max_consecutive_hits = 0
+for date, num_batting, num_hit in bRecords:
+    if num_hit > 0:
+        consecutive_hits += 1
+    else:
+        if max_consecutive_hits < consecutive_hits:
+            max_consecutive_hits = consecutive_hits
+        consecutive_hits = 0
+
+print(max_consecutive_hits)

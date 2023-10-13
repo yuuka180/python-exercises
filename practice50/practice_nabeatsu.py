@@ -5,7 +5,10 @@
 # 数字を渡すと、ナベアツが返す文字列を返す関数nabeatsu(n)を完成させてください。
 def nabeatsu(n):
     # この下を埋めてプログラムを完成させてください
-    
+    if n % 3 == 0 or ("3" in str(n)):
+        return "(｡Дﾟ) {0}ッ".format(n)
+    else:
+        return str(n)    
 
 n = 40
 for i in range(1, n+1):
